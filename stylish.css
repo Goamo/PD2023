@@ -78,6 +78,7 @@ input{
 .info{
     text-align: center;
     background-color: #ffecdb;
+    padding-top: 25px;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 5px;
@@ -162,6 +163,43 @@ footer{
 .texti{
     height: 50px;
 }
+
+nav {
+    background-color: rgba(255,175,71,1);
+     box-shadow: 0px 1px 10px  rgba(255,175,71,1);
+     padding: 20px;
+     position: fixed;
+     top: 0;
+     background:  rgba(255,175,71,1); 
+     z-index: 100;
+     width: 100%;
+     display: flex;
+     justify-content: center; /* Центрируем по горизонтали */
+     align-items: center;
+   }
+   
+   nav ul {
+     list-style: none;
+     display: flex;
+     margin: 0; /* Убираем отступы у списка */
+     padding: 0;
+   }
+   
+   nav li {
+     margin-right: 28px; 
+   }
+   
+   nav a {
+     padding: 8px 17px;
+     display: block; /* Добавляем блочный стиль для полного заполнения контейнера */
+   }
+   
+   nav a:hover {
+     background-color: #E48400;
+     color: #fff; 
+     border-radius: 3px;
+   }
+   
 @media screen and (min-width: 550px) {
     .vypusk{
         grid-template-columns: repeat(3, 1fr) ;
